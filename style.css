@@ -1,0 +1,354 @@
+/* Fuentes */
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@700&display=swap');
+
+/* Estilos generales */
+body {
+    font-family: 'JetBrains Mono', monospace;
+    background-color: #333;
+}
+
+body.swal2-shown>[aria-hidden="true"] {
+    transition: 0.1s filter;
+    filter: blur(10px);
+}
+
+/* Contenido Navbar */
+.navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.navbar-brand:hover {
+    color: #00C4FF;
+}
+
+#navbarNav {
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar-nav .nav-item {
+    margin-right: 10px;
+}
+
+.navbar-nav .nav-link {
+    color: #fff;
+    margin-right: 10px;
+    font-size: 14px;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #00C4FF;
+}
+
+.navbar-toggler {
+    border: none;
+    color: #fff;
+}
+
+/* Estilos del Dropdown */
+.dropdown-item {
+    color: #333;
+}
+
+.dropdown-item:hover {
+    color: #00C4FF;
+}
+
+/* Estilo: Video de fondo */
+#videoContenedor {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    /* Proporción de aspecto 16:9 */
+    overflow: hidden;
+}
+
+#videoFondo {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 80%;
+}
+
+#contenido {
+    font-size: 14px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+}
+
+
+/* Estilo: Calculadora */
+#seccion2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+        url(https://cdn.pixabay.com/photo/2013/09/01/17/07/calculator-178127_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+#seccion3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.767), rgba(0, 0, 0, 0.712)),
+        url(https://cdn.pixabay.com/photo/2013/09/01/17/07/calculator-178127_1280.jpg);
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+button {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.form-container {
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-container input,
+.form-container select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.form-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.form-container button:hover {
+    background-color: #45a049;
+}
+
+.item-carrito {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.item-carrito img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* Estilos para las tarjetas de los productos */
+/* .item-carrito {
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-left: 20px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    width: 250px;
+    height: 350px;
+}
+
+.item-carrito img {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+ */
+.item-carrito h3 {
+    color: #fff;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.item-carrito p {
+    font-size: 12px;
+    color: #fff;
+    margin: 5px 0;
+}
+
+#totalCarrito {
+    color: #fff;
+    font-weight: bold;
+}
+
+.contenedor-filtro-busqueda {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.filtro-busqueda {
+    text-align: center;
+}
+
+.mensaje-vacio {
+    color: #fff !important;
+}
+
+.filtro-busqueda label {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.filtro-busqueda input[type="text"] {
+    width: 300px;
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Estilo para el mensaje de "No se encontraron productos" */
+#listaCarrito p.mensaje-vacio {
+    text-align: center;
+    font-style: italic;
+    color: #999;
+}
+
+.detalle-imagen {
+    max-width: 200px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+.p-emergente {
+    color: #333;
+}
+
+/* Estilo: Salto de linea */
+.logo-seccion {
+    font-size: 16px;
+    background: #333;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    padding: 12px 0px 8px 0px;
+}
+
+.logo-seccion h1 {
+    font-size: 2rem;
+    color: #fff;
+}
+
+h1:hover {
+    color: #00C4FF;
+}
+
+/* Footer */
+.footer {
+    background: #1B1919;
+    color: #fff;
+    padding: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer p {
+    margin-top: 5px !important;
+}
+
+.footer .span {
+    color: #00C4FF;
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.span {
+    cursor: pointer;
+}
+
+.span:hover {
+    color: #fff;
+}
+
+.carrito-flotante {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #f8f8f8;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.carrito-flotante i {
+    color: #333;
+    font-size: 24px;
+}
+
+.carrito-emergente {
+    width: 400px;
+    max-width: 90%;
+    text-align: center;
+}
+
+#listaCarritoEmergente {
+    list-style: none;
+    padding: 0;
+}
+
+#listaCarritoEmergente li {
+    margin-bottom: 10px;
+}
+
+#comprarBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
